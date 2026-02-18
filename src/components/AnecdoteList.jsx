@@ -8,7 +8,7 @@ const AnecdoteList = () => {
 
     useEffect(() => {
         dispatch(initializeAnecdotes())
-    }, [])
+    }, [dispatch])
 
     const anecdotes = useSelector(state => {
         if ( state.filter === 'ALL' ) {
